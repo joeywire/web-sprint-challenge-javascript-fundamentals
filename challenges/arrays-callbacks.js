@@ -15,7 +15,7 @@ const zooAnimals = [
   { animal_name: "Australian pelican", population: 5, scientific_name: "Pelecanus conspicillatus", state: "West Virginia" },
 ];
 
-console.log(zooAnimals);
+// console.log(zooAnimals);
 
 /* Request 1: .forEach()
 
