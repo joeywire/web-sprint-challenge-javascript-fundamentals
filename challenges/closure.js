@@ -20,7 +20,7 @@ myFunction();
 /*
 nestedFunction can access the varible `internal` becasue the exist in the same lexical scope. In this case the lexical scope I'm referring to is everything with myFunction's {}. 
 
-The closure is created when we declare nestedFunction in our lexical environment, now when we initalize myFunction and subsequently initiate nestedFunction - nestedFunction has access to all the data in myFunctions lexical environment, including any variables. But this only works in to out, myfunciton can not reach into nested function - its 'enclosed'.
+The closure is created when we declare nestedFunction in our lexical environment, now when we initalize myFunction and subsequently initiate nestedFunction - nestedFunction has access to all the data in myFunctions lexical environment, including any variables. But this only works in to out, myfunciton can not reach into it's nested function(s),
 */
 
 /* Task 2: Counter */

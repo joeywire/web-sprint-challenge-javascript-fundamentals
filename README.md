@@ -27,13 +27,37 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    `.forEach` is basically a more concise way to construct a for loop that iterates through each item in an array without stopping. It doesn't return a new array and a return statemnt is optional. `.map` returns a new array, needs a return keyword and is ideal for converting data. 
+
 2. Explain the difference between a callback and a higher order function.
+
+    A higer order function is a function that accepts another function (a callback) as an argument. 
 
 3. What is closure?
 
+    Closure is the integration of a function with its lexical environment (the data in the block our function was declared in). Therefor An `enclosed` function has acces to all the data withing its parent's scope - including variables. This is poweful because it lets us associate the data with a function that operates on that data. 
+
+    BLUF: Closure gives an inner function access to an outer functions scope. 
+
 4. Describe the four rules of the 'this' keyword.
+    
+    1. Window Binding:
+        When operating in global scope or when no other rules apply `this` defaults to the window. Unless you are in `strict mode` in which case `this` will return undefined. 
+
+    2. Implicit Binding:
+        This is the most common rule for `this`. It applies to objects with methods - when the function/ method is invoked `this` looks to the left of the '.' and binds to that object. 
+
+    3. Explicit Binding:
+        When we explicitly tell `this` what to bind to using .call(), .apply() or .bind()
+            .call() immediatly invokes the function and passes in arguments one by one i.e. `thisFunction.call(object);`
+            .apply() immediatley invokes the function and passes in arguments as an array
+            .bind() doesnt immediatly invoke the function - returns a new function to be invoked later. Pass in arguments one by one i.e `const binded = thisFunction.bind(object);` -- `binded();`
+
+    4. New Binding 
+        Using constructor functions and `new` creates a new object and `this` points to our newly created object. 
 
 5. Why do we need super() in an extended class?
+    super() needs to be used when extending a class so our new object can access and call the methods from it's parent object. Basically it passes the methods from parentObj/parentClass to childObj/childClass. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
